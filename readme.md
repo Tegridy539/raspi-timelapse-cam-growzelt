@@ -1,5 +1,5 @@
 # Raspberry Pi Timelapse Cam - Growzelt
-<img src="https://github.com/user-attachments/assets/56ba877b-263f-4b96-945f-786c3d418803" alt="timelapse" width="50%" hight="50%">
+<img src="https://github.com/user-attachments/assets/01d78771-4916-4122-bd52-99a72310e68a" alt="timelapse" width="50%" hight="50%">
 
 ## Worum geht es?
 Die Idee ist, in regelmäßigen Abständen (1x die Stunde, immer um viertel nach) ein Foto von den Pflanzen zu machen, um daraus später einen Zeitraffer zu schneiden. 
