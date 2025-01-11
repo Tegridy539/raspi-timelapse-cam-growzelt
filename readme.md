@@ -57,11 +57,13 @@ sudo chmod +x /home/pi/Raspi-Timelapse-Cam/scripts/capture.sh
 ```
 
 #### 7. Dropbox-Uploader konfigurieren
-Der Uploader muss vor der ersten Nutzung mit deiner persönlichen Dropbox über einen API-Key verbunden werden. Führe das Setup einmal aus:
+Der Uploader muss vor der ersten Nutzung mit deiner persönlichen Dropbox über einen API-Key verbunden werden. 
+Führe das Setup einmal aus:
 ```bash
 /home/pi/Raspi-Timelapse-Cam/scripts/Dropbox-Uploader/dropbox_uploader.sh
 ```
-Die Fotos werden dann in den Ordner `/Apps/<NAME_DER_DROPBOX_APP>` hochgeladen.
+Der Setupwizard von Dropbox-Uploader leitet dich nun durch die Anlage eines Dropbox API-Keys und die Konfiguration.
+Die Fotos werden dann in der Dropbox in den Ordner `/Apps/<NAME_DER_DROPBOX_APP>` hochgeladen.
 
 #### 8. Cronjob anlegen
 Damit das Script `capture.sh` automatisch ausgeführt wird, öffne die Cronjob-Konfiguration:
