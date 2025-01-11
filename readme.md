@@ -47,20 +47,20 @@ sudo apt install fswebcam
 #### 5. Repository klonen
 ```bash
 cd /home/pi
-git clone https://github.com/Tegridy539/Raspi-Timelapse-Cam.git
+git clone https://github.com/Tegridy539/raspi-timelapse-cam-growzelt.git
 ```
 
 #### 6. Dateien ausführbar machen
 ```bash
-sudo chmod +x /home/pi/Raspi-Timelapse-Cam/scripts/Dropbox-Uploader/dropbox_uploader.sh
-sudo chmod +x /home/pi/Raspi-Timelapse-Cam/scripts/capture.sh
+sudo chmod +x /home/pi/raspi-timelapse-cam-growzelt/scripts/Dropbox-Uploader/dropbox_uploader.sh
+sudo chmod +x /home/pi/raspi-timelapse-cam-growzelt/scripts/capture.sh
 ```
 
 #### 7. Dropbox-Uploader konfigurieren
 Der Uploader muss vor der ersten Nutzung mit deiner persönlichen Dropbox über einen API-Key verbunden werden. 
 Führe das Setup einmal aus:
 ```bash
-/home/pi/Raspi-Timelapse-Cam/scripts/Dropbox-Uploader/dropbox_uploader.sh
+/home/pi/raspi-timelapse-cam-growzelt/scripts/Dropbox-Uploader/dropbox_uploader.sh
 ```
 Der Setupwizard von Dropbox-Uploader leitet dich nun durch die Anlage eines Dropbox API-Keys und die Konfiguration.
 Die Fotos werden dann in der Dropbox in den Ordner `/Apps/<NAME_DER_DROPBOX_APP>` hochgeladen.
@@ -73,8 +73,8 @@ crontab -e
 Füge unten folgende Zeilen hinzu (die Zeitangaben können angepasst werden):
 ```bash
 # Fotos zwischen 18:00 und 12:00 Uhr aufnehmen
-15 18-23 * * * /home/pi/Raspi-Timelapse-Cam/scripts/capture.sh >/dev/null 2>&1
-15 0-12 * * * /home/pi/Raspi-Timelapse-Cam/scripts/capture.sh >/dev/null 2>&1
+15 18-23 * * * /home/pi/raspi-timelapse-cam-growzelt/scripts/capture.sh >/dev/null 2>&1
+15 0-12 * * * /home/pi/raspi-timelapse-cam-growzelt/scripts/capture.sh >/dev/null 2>&1
 ```
 
 ### Fertig!
